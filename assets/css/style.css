@@ -80,7 +80,7 @@
     align-items: center;
     background-color: var(--rl-header-icon-blue);
     height: 75px;
-    padding: 0 6%;
+    padding: 0 10%;
 }
 /* header */
 
@@ -93,7 +93,7 @@
 .container_app .row {
     display: flex;
     flex-direction: column;
-    width: 88%;
+    padding: 5% 10%;
 }
 
 .container_app .appsto {
@@ -123,7 +123,7 @@
 .container_planning .row {
     display: flex;
     flex-direction: column;
-    padding: 10% 5%;
+    padding: 10% 10%;
 }
 
 .strategic h2  {
@@ -150,7 +150,63 @@
     font-style: italic;
     padding: 20px 0;
 }
+/* Second section */
 
+.container_partners {
+    text-align: center;
+    padding: 10% 10%;
+}
+
+.container_partners h2 {
+    color: var(--rl-purple);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nat, .celina, .bob {
+    background-color: var(--rl-purple);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin: 15px 0;
+    border-radius: 30px;
+}
+
+.container_partners .card_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin-bottom: 30px; 
+    aspect-ratio: 1 / 1;
+}
+/* Third section */
+
+.nat .card_img {
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.celina .card_img {
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.bob .card_img {
+    background-image: url(../img/testimonial3.jpg);
+}
+
+.container_partners .card_text {
+    color: var(--rl-whigt);
+    line-height: 1.5rem;
+}
+
+.card_text h5 {
+    padding-top: 20px;
+}
+
+.container_partners i {
+    padding: 5px;
+}
+/* Utilitis Third section */
 
 
 } 
