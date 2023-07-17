@@ -69,6 +69,7 @@
 
 @media screen and (max-width: 375px) {
 
+    
 .header-sm-md{
     display: flex;
     justify-content: space-between;
@@ -83,13 +84,11 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .container_app .row {
     display: flex;
     flex-direction: column;
-    height: 2280px;
     width: 88%;
 }
 
@@ -112,5 +111,33 @@
     height: 350px;
 }
 /* First section mobile */
+
+.container_planning {
+    background-color: var(--rl-purple);
+    height: 1400px;
+}
+
+.container_planning .row {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+}
+
+.strategic h2  {
+    color: var(--rl-whigt);
+    padding-top: 50px;
+}
+
+.strategic p {
+    line-height: 1.5rem;
+    color: var(--rl-whigt);
+    padding-top: 30px;
+}
+
+.app_dev {
+   
+}
+
+
 
 } 
