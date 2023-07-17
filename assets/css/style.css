@@ -3,3 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --rl-header-icon-blue:#0084fd;
+    --rl-col-blue:#b5ddff;
+    --rl-text-col-blue:#0b8afd;
+    --rl-purple:#9792e4;
+    --rl-free: #fdc15f;
+    --rl-footer-bg:#333333;
+    --rl-whigt:#ffffff;
+}
+
+.header i {
+    color: var(--rl-whigt);
+}
+
+.header.debug{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--rl-header-icon-blue);
+    height: 75px;
+    padding: 0 6%;
+
+}
