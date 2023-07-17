@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 :root {
@@ -14,16 +15,27 @@
     --rl-whigt:#ffffff;
 }
 
-.header i {
+.header-sm-md > i {
     color: var(--rl-whigt);
 }
 
-.header.debug{
+.header-lg {
+    display: none;
+}
+
+
+@media screen and (max-width: 375px) {
+
+.header-sm-md.debug{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--rl-header-icon-blue);
     height: 75px;
     padding: 0 6%;
-
 }
+
+
+
+
+} 
