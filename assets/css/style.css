@@ -57,6 +57,13 @@
     padding: 0 5px;
 }
 
+.btn_purple {
+    background-color: var(--rl-purple);
+    color: var(--rl-whigt);
+    padding: 5px 25px;
+    border-radius: 25px;
+}
+
 .container_app i {
     color: var(--rl-header-icon-blue);
 }
@@ -208,5 +215,135 @@
 }
 /* Utilitis Third section */
 
+.container_benefits {
+    background-color: var(--rl-purple);
+    text-align: center;
+    color: var(--rl-whigt);
+    padding: 10% 10%;
+}
 
+.quality, .team, .results, .pricing, .innovations, .support {
+    text-align: left;
+    background-color: var(--rl-whigt);
+    color: var(--rl-purple);
+    margin: 10% 3%;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.container_benefits h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.container_benefits p {
+    padding: 20px 0;
+}
+/* Fourth section */
+
+.container_aboutus {
+    padding: 10% 10%;
+}
+
+.container_aboutus .card_top {
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    width: calc(100% / 12 *6);
+    margin: 40px 0; 
+    aspect-ratio: 1 / 1;
+}
+
+.container_aboutus h1 {
+    color: var(--rl-purple);
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+.container_aboutus h2 {
+    color: var(--rl-purple);
+    padding-bottom: 40px;
+}
+
+.container_aboutus p {
+    padding-top: 30px;
+    line-height: 1.8rem;
+}
+
+.container_aboutus .card_top i {
+    color: var(--rl-purple);
+    font-size: 60px;
+    padding-left: 80%;
+}
+
+.container_aboutus .card_bottom i {
+    padding-right: 5px;
+}
+
+.container_aboutus .card_bottom button {
+    background-color: var(--rl-purple);
+    color: var(--rl-whigt);
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+/* Fifth section */
+
+.container_getstart {
+    background-color: var(--rl-purple);
+    text-align: center;
+    
+    padding: 10% 10%;
+}
+
+.container_getstart h5 {
+    color: lightgray;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.container_getstart h2 {
+    color: var(--rl-whigt);
+    padding-bottom: 20px;
+}
+
+.container_getstart h1 {
+    color: var(--rl-free);
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.container_getstart p {
+    color: var(--rl-whigt);
+    padding-bottom: 20px;
+}
+
+.container_getstart button {
+    color: var(--rl-purple);
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.container_getstart h6,a {
+    color: var(--rl-whigt);
+    padding-top: 20px;
+}
+/* Sixth section */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--rl-footer-bg);
+    color: var(--rl-whigt);
+    padding: 10% 10%;
+    height: 230px;
+}
+
+.foot_bottom a {
+    color: var(--rl-purple);
+}
+/* Footer end */
 } 
