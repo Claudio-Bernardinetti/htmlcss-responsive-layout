@@ -39,6 +39,10 @@
     width: calc(100% / 12 * 12);
 }
 
+[class^="col-"] {
+    padding: 0;
+}
+
 .container_app .col-12, .container_app .col-8, .container_app .col-4 {
     margin-bottom: 25px;
     border-radius: 15px;
@@ -108,7 +112,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 600px;
     padding: 0 5%;
 }
 
@@ -119,7 +122,6 @@
     align-items: center;
     text-align: center;
     padding: 10% 5%;
-    height: 350px;
 }
 /* First section mobile */
 
@@ -147,7 +149,6 @@
 
 .app_dev {
     background-color: var(--rl-whigt);
-    height: 600px;
     padding-top: 50px;
     border-radius: 30px;
     text-align: center;
@@ -216,6 +217,9 @@
 /* Utilitis Third section */
 
 .container_benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--rl-purple);
     text-align: center;
     color: var(--rl-whigt);
@@ -226,7 +230,7 @@
     text-align: left;
     background-color: var(--rl-whigt);
     color: var(--rl-purple);
-    margin: 10% 3%;
+    margin: 10% 0%;
     border-radius: 15px;
     padding: 20px;
 }
@@ -293,14 +297,13 @@
 .container_getstart {
     background-color: var(--rl-purple);
     text-align: center;
-    
     padding: 10% 10%;
 }
 
 .container_getstart h5 {
     color: lightgray;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .container_getstart h2 {
@@ -347,3 +350,46 @@ footer {
 }
 /* Footer end */
 } 
+
+@media screen and (max-width: 810px) {
+
+    .header-sm-md{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--rl-header-icon-blue);
+        height: 75px;
+        padding: 0 10%;
+    }
+    /* header */
+
+    .container_app {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .container_app .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .container_app .appsto.col-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    .code.col-4, .design.col-4, .develop.col-4, .brand.col-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center; 
+    }
+    /* First section mobile */
+
+
+}
