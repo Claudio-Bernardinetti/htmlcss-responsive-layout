@@ -40,15 +40,9 @@
 }
 
 [class^="col-"] {
-    padding: 0;
+    padding: 0 1rem;
 }
 
-.container_app .col-12, .container_app .col-8, .container_app .col-4 {
-    margin-bottom: 25px;
-    border-radius: 15px;
-    background-color:var(--rl-col-blue);
-
-}
 
 .btn_blue {
     background-color: var(--rl-header-icon-blue);
@@ -57,8 +51,9 @@
     border-radius: 15px;
 }
 
-.btn_blue>i {
+.btn_blue > i {
     padding: 0 5px;
+    text-decoration: var(--rl-whigt);
 }
 
 .btn_purple {
@@ -68,11 +63,11 @@
     border-radius: 25px;
 }
 
-.container_app i {
+#plant_app i {
     color: var(--rl-header-icon-blue);
 }
 
-.container_app h3 {
+#plant_app h3 {
     color: var(--rl-text-col-blue);
     padding-top: 20px;
 }
@@ -81,8 +76,9 @@
     background-color: var(--rl-purple);
     padding: 20px 25px;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
-@media screen and (max-width: 375px) {
+/* Utilitis */
 
     
 .header-sm-md{
@@ -95,33 +91,41 @@
 }
 /* header */
 
-.container_app {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.img_app {
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
 }
 
-.container_app .row {
+.container_app {
     display: flex;
     flex-direction: column;
-    padding: 5% 10%;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .container_app .appsto {
+    background-color: var(--rl-col-blue);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .code, .design, .develop, .brand {
+    background-color: var(--rl-col-blue);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 10% 5%;
+    margin-top: 1rem;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 /* First section mobile */
 
@@ -129,7 +133,7 @@
     background-color: var(--rl-purple);
 }
 
-.container_planning .row {
+.container_planning {
     display: flex;
     flex-direction: column;
     padding: 10% 10%;
@@ -160,12 +164,12 @@
 }
 /* Second section */
 
-.container_partners {
+#plant_partners {
     text-align: center;
     padding: 10% 10%;
 }
 
-.container_partners h2 {
+#plant_partners h2 {
     color: var(--rl-purple);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -202,7 +206,7 @@
     background-image: url(../img/testimonial3.jpg);
 }
 
-.container_partners .card_text {
+#plant_partners .card_text {
     color: var(--rl-whigt);
     line-height: 1.5rem;
 }
@@ -211,19 +215,22 @@
     padding-top: 20px;
 }
 
-.container_partners i {
+#plant_partners i {
     padding: 5px;
 }
 /* Utilitis Third section */
 
+#plant_benefits {
+    background-color: var(--rl-purple);
+    color: var(--rl-whigt);
+    text-align: center;
+    padding-top: 20px;
+    padding: 10% 10%;
+}
+
 .container_benefits {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--rl-purple);
-    text-align: center;
-    color: var(--rl-whigt);
-    padding: 10% 10%;
+    flex-direction: column;  
 }
 
 .quality, .team, .results, .pricing, .innovations, .support {
@@ -349,9 +356,18 @@ footer {
     color: var(--rl-purple);
 }
 /* Footer end */
-} 
 
-@media screen and (max-width: 810px) {
+
+@media screen and (min-width: 810px) and (max-width: 1920px) {
+
+    .appsto.col-12 {
+        display: none;
+    }
+
+    .code.col-12, .design.col-12, .develop.col-12, .brand.col-12 {
+        display: none;
+    }
+    
 
     .header-sm-md{
         display: flex;
@@ -363,33 +379,58 @@ footer {
     }
     /* header */
 
-    .container_app {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
+
     
-    .container_app .row {
+    /* First section tablet */
+
+    .container_partners {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .nat, .celina, .bob {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container_partners .card_img {
+        width: calc(100% / 12 * 4);
+    }
+
+    .container_partners .card_text {
+        width: calc(100% / 12 *8);
+    }
+    /* Third section tablet */
+
+    .container_benefits {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
-    
-    .container_app .appsto.col-8 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center; 
-    }
-    
-    .code.col-4, .design.col-4, .develop.col-4, .brand.col-4 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center; 
-    }
-    /* First section mobile */
 
+    .quality, .team, .results, .pricing, .innovations, .support {
+        width: calc((100% - 2rem) / 12 * 6);
+        margin:  0.5rem;
+    }
+   /* forth section tablet */
 
+   .linkedin {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .linkedin .card_text {
+    width: calc(100% / 12 *6);
+   }
+
+   .linkedin .card_img_text {
+    width: calc(100% / 12 * 4);
+   }
+ 
+   /* Fifth section tablet */
+}
+
+@media screen and (min-width: 1920px){
+    
 }
