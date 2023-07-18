@@ -63,8 +63,8 @@
     border-radius: 25px;
 }
 
-#plant_app i {
-    color: var(--rl-header-icon-blue);
+.appsto > button i {
+    color: white;
 }
 
 #plant_app h3 {
@@ -80,6 +80,7 @@
 }
 /* Utilitis */
 
+
     
 .header-sm-md{
     display: flex;
@@ -87,7 +88,7 @@
     align-items: center;
     background-color: var(--rl-header-icon-blue);
     height: 75px;
-    padding: 0 10%;
+    padding: 0 1rem;
 }
 /* header */
 
@@ -103,25 +104,30 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    width: 100%;
-}
-
-.container_app .appsto {
-    background-color: var(--rl-col-blue);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 2rem;
 }
 
-.code, .design, .develop, .brand {
+ .appsto,.code, .design, .develop, .brand {
     background-color: var(--rl-col-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-radius: 15px;
+}
+
+.appsto {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.appsto_img {
+    max-width: 250px;
+}
+
+.code, .design, .develop, .brand {
     padding: 10% 5%;
     margin-top: 1rem;
     margin-right: 10%;
@@ -358,16 +364,25 @@ footer {
 /* Footer end */
 
 
-@media screen and (min-width: 810px) and (max-width: 1920px) {
+/* Tablet  */
+@media screen and (min-width: 576px)  {
 
-    .appsto.col-12 {
-        display: none;
+    /* Tools */        
+    .col-md-4 {
+        width: calc(100% / 12 * 4 - 1rem);
     }
 
-    .code.col-12, .design.col-12, .develop.col-12, .brand.col-12 {
-        display: none;
+    .col-md-6 {
+        width: calc(100% / 12 * 6 - 1rem);
     }
-    
+
+    .col-md-8 {
+        width: calc(100% / 12 * 8 - 1rem);
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
 
     .header-sm-md{
         display: flex;
@@ -375,13 +390,40 @@ footer {
         align-items: center;
         background-color: var(--rl-header-icon-blue);
         height: 75px;
-        padding: 0 10%;
+        padding: 0 1rem;
     }
     /* header */
 
 
+     /* First section tablet */
+    .container_app {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .container_app [class*=col] {
+        margin: .5rem;
+        padding: 1rem;
+    }
+
+    .appsto_img {
+        margin-bottom: -1rem;
+    }
+
+    .container_app  i {
+        color: var(--rl-header-icon-blue);
+    }
     
-    /* First section tablet */
+    .appsto {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .appsto > p {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
 
     .container_partners {
        display: flex;
@@ -431,6 +473,7 @@ footer {
    /* Fifth section tablet */
 }
 
-@media screen and (min-width: 1920px){
+/* Desktop */
+@media screen and (min-width: 992px) {
     
 }
