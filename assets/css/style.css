@@ -70,7 +70,7 @@ h3 {
     border-radius: 25px;
 }
 
-.appsto > button i {
+.appsto .card_text > button i {
     color: white;
 }
 
@@ -132,8 +132,14 @@ h3 {
     margin-right: 1rem;
 }
 
+.appsto .card_text > p {
+    margin-bottom: 1rem;
+}
+
 .appsto_img {
-    max-width: 250px;
+    max-width: 240px;
+    margin-top: 1rem;
+    margin-bottom: -.4rem;
 }
 
 
@@ -420,7 +426,7 @@ footer {
     }
 
     .appsto_img {
-        margin-bottom: -1rem;
+        margin-bottom: -1.4rem;
     }
 
     .container_app  i {
@@ -432,7 +438,7 @@ footer {
         align-items: flex-start;
     }
 
-    .appsto > p {
+    .appsto .card_text {
         text-align: left;
         margin-bottom: 1rem;
     }
@@ -553,14 +559,14 @@ footer {
     .appsto {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: flex-end;
         text-align: left;
     }
 
     .appsto > p {
-        
+        text-decoration: solid;
     }
     /* First section desktop */
 
@@ -596,4 +602,22 @@ footer {
         padding-left: 2rem;
     }
     /* Fourth section desktop */
+
+    .container_getstart {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    /* Fifth section desktop */
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    .foot_top {
+        padding-bottom: 2rem;
+    }
+    /* Footer section desktop */
 }
